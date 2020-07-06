@@ -11,7 +11,7 @@
         },
     ];
 
-    
+
     const addNewTask = (newTaskContent) => {
         tasks.push({
             content: newTaskContent,
@@ -21,19 +21,23 @@
 
     const removeTask = (index) => {
         tasks.splice(index, 1);
-                render();
-    }
+        render();
+    };
+
+    const toggleTaskDone = (index) => {
+        tasks[index].done = !tasks[index].done;
+        render();
+    };
 
     const render = () => {
         let taskContent = "";
 
         for (const task of tasks) {
             taskContent += `
-                <li>
+                <li ${task.done ? "style =\"text-decoration: line-through\"" : ""}>
+                <button class="js-toggleDone">${task.done ? "Zrobione" : "Niezrobione"}</button>
                 ${task.content}
-                <button class="js-remove">
-                Usuń
-                </button>
+                <button class="js-remove">Usuń</button>
                 </li>
             `;
         }
@@ -45,7 +49,14 @@
             removeButton.addEventListener("click", () => {
                 removeTask(index);
             })
+        })
 
+        const toggleDoneButtons = document.querySelectorAll(".js-toggleDone");
+
+        toggleDoneButtons.forEach((toggleDoneButton, index) => {
+            toggleDoneButton.addEventListener("click", () => {
+                toggleTaskDone(index);
+            })
         })
     }
 
