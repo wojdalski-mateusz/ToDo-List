@@ -1,4 +1,4 @@
-# Simple currency calculator
+# Simple TODO List
 A simple TODO List created as part of the course in [youcode](https://youcode.pl) academy.
 ## Technologies
 - HTML
