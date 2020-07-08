@@ -1,0 +1,36 @@
+.form {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form__input {
+    background-color: white;
+    flex-basis: 75%;
+    padding: 5px;
+    border: 1px solid hsl(0, 0%, 87%);
+}
+
+@media (max-width: 767px) {
+    .form__input {
+        flex-basis: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+    }
+}
+
+.form__button {
+    padding: 5px;
+    background-color: teal;
+    color: white;
+    border: none;
+    flex-basis: auto;
+}
+
+@media (max-width: 767px) {
+    .form__button {
+        flex-basis: 100%;
+        padding: 5px;
+    }
+}

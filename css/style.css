@@ -7,5 +7,9 @@ html {
 }
 
 body {
-    font-family: 'Lato' , sans-serif;
+    font-family: 'Lato', sans-serif;
+    background-color: hsl(0, 0%, 90%);
+    margin: 0 auto;
+    max-width: 700px;
+    display: block;
 }
