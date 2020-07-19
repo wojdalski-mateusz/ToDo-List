@@ -8,9 +8,14 @@
     background-color: white;
     padding: 10px 20px;
     margin: 0 0 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .section__content {
     background-color: white;
     padding: 20px;
 }
+
