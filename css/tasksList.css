@@ -24,14 +24,23 @@
     height: 30px;
     color: white;
     flex-shrink: 0;
+    transition: 1s;
 }
 
 .tasksList__button--done {
     background-color: green;
 }
 
+.tasksList__button--done:hover {
+    background-color: hsl(120, 100%, 35%);
+}
+
 .tasksList__button--remove {
     background-color: red;
+}
+
+.tasksList__button--remove:hover {
+    background-color: hsl(0, 100%, 60%);
 }
 
 .tasksList__content {

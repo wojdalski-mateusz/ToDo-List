@@ -4,18 +4,17 @@
 }
 
 .buttons__liveButton {
-    background-color: teal;
-    color: white;
+    background-color: transparent;
+    color: teal;
     border: none;
     margin: 5px 0 0 20px;
     flex-basis: auto;
+    transition: 1s;
 }
 
-.buttons__button {
-    background: transparent;
-    color: teal;
-    border: none;
-    margin: 0 0 0 20px;
-    transition: color 0.3s;
+.buttons__liveButton:hover {
+    color: hsl(180, 100%, 35%);
 }
-
+.buttons__liveButton:disabled {
+    color: rgb(128, 128, 128);
+}

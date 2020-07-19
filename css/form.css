@@ -26,6 +26,12 @@
     color: white;
     border: none;
     flex-basis: auto;
+    transition: 1s;
+}
+
+.form__button:hover {
+    transform: scale(1.1);
+    background-color: hsl(180, 100%, 35%);
 }
 
 @media (max-width: 767px) {
